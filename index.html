@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital visitkort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/hvid logo trans.png" alt="" class="logo" />
+          <ul>
+            <li><a href="#om">Om mig</a></li>
+            <li><a href="#" onclick="showContactInfo()">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Uddannet front-end udvikler</p>
+          <h1>Hej, jeg hedder Haris Drekovic</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/haris-kopi 2.png" alt="" />
+          </div>
+          <div>
+            <div id="om"></div>
+            <p>
+              Mit navn er Haris Drekovic, og jeg er en 29-årig mand bosat i
+              Odense. Jeg har en passion for webudvikling med fokus på
+              front-end, og jeg er uddannet webudvikler fra Roskilde Tekniske
+              Skole. Ud over min uddannelse som webudvikler har jeg også en
+              baggrund inden for markedsføring fra UCL Odense. <br />
+              <br />
+              I min tid som studerende har jeg været i praktik hos virksomheder
+              som River Online/Setion i Odense og hos withyodo.com i Madrid,
+              Spanien. Mine primære færdigheder inkluderer HTML, CSS,
+              JavaScript, React, Next.js, & Tailwind
+            </p>
+            <div class="cv">
+              <img src="img/haris-pb.png" alt="" class="logo" />
+              <button
+                class="get-cv-button"
+                onclick="window.location.href='mailto:drekovicharis@gmail.com?subject=Få mit CV'"
+              >
+                Få mit CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <small>Haris Drekovic // drekovicharis@gmail.com // 28606155</small>
+    </footer>
+
+    <div id="contactPopup" class="popup-container">
+      <p>E-mail: drekovicharis@gmail.com</p>
+      <p>Telefon: 28606155</p>
+      <button onclick="hideContactInfo()">Luk</button>
+    </div>
+
+    <script>
+      function showContactInfo() {
+        document.getElementById("contactPopup").style.display = "block";
+      }
+
+      function hideContactInfo() {
+        document.getElementById("contactPopup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
